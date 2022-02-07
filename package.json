@@ -1,0 +1,28 @@
+{
+  "name": "tlm_get_dokter_by_distance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx functions-framework --target=tlmGetDokter --signature-type=http --env-vars-file .env.yaml"
+  },
+  "author": "Avner",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/spanner": "^5.15.2",
+    "@google-cloud/storage": "^5.14.5",
+    "busboy": "^0.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-multipart-file-parser": "^0.1.2",
+    "form-data": "^4.0.0",
+    "haversine-distance": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "sort-es": "^1.4.5"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.9.0"
+  }
+}
